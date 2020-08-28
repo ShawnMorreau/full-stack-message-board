@@ -22,7 +22,7 @@ exports.signin = async function (req, res, next) {
                 username,
                 profileImgUrl
             }, process.env.SECRET_KEY);
-            console.log(token);
+            console.log("token is " + token);
             return res.status(200).json({
                 id,
                 username,

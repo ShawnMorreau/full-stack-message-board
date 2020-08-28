@@ -4,7 +4,7 @@
   "description": "Backend client for intro to auth",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "./node_modules/.bin/mocha --exit"
   },
   "author": "",
   "license": "ISC",
@@ -15,6 +15,15 @@
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "jsonwebtoken": "^8.5.1",
+    "mongodb-memory-server": "^6.6.6",
     "mongoose": "^5.10.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "chai": "^4.2.0",
+    "chai-http": "^4.3.0",
+    "mocha": "^8.1.2",
+    "nodemon": "^2.0.4"
   }
 }
