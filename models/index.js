@@ -3,7 +3,7 @@ mongoose.set("debug",true);
 mongoose.set('useCreateIndex', true);
 mongoose.Promise=Promise;
 
-mongoose.connect("mongodb://localhost/warbler",{
+mongoose.connect(process.env.MONGODB_URI||"mongodb://localhost/warbler",{
     keepAlive:true,
     useUnifiedTopology:true,
     useNewUrlParser:true
