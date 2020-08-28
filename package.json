@@ -4,7 +4,8 @@
   "description": "Backend client for intro to auth",
   "main": "index.js",
   "scripts": {
-    "test": "./node_modules/.bin/mocha --exit"
+    "test": "./node_modules/.bin/mocha --exit",
+    "start": "node index.js"
   },
   "author": "",
   "license": "ISC",
