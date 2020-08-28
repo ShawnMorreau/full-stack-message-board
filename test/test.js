@@ -45,18 +45,18 @@ describe("API TESTS", () => {
                 });
         });
     });
-    describe("GET /api/messages/ when authorized",()=>{
-        it("Should return a list of messages with status 201",done=>{
-            chai.request(app)
-                .get('/api/messages')
-                .set('Authorization','Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVmNDg2NjJjYzI3YjEzYjM2YzFhZDU1NiIsInVzZXJuYW1lIjoiYWEiLCJpYXQiOjE1OTg1ODA0NTd9.B_oLJS8yPM1aAHHbF_K8zOl6VjF7jOIbzKdaSM4jkcE')
-                .end((err,res)=>{
-                    res.should.have.status(201);
-                    res.body.should.be.a('object');
-                    done();
-                });
-        })
-    })
+    // describe("GET /api/messages/ when authorized",()=>{
+    //     it("Should return a list of messages with status 201",done=>{
+    //         chai.request(app)
+    //             .get('/api/messages')
+    //             .set('Authorization','Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVmNDg2NjJjYzI3YjEzYjM2YzFhZDU1NiIsInVzZXJuYW1lIjoiYWEiLCJpYXQiOjE1OTg1ODA0NTd9.B_oLJS8yPM1aAHHbF_K8zOl6VjF7jOIbzKdaSM4jkcE')
+    //             .end((err,res)=>{
+    //                 res.should.have.status(201);
+    //                 res.body.should.be.a('object');
+    //                 done();
+    //             });
+    //     })
+    // })
 })
 
 // {
